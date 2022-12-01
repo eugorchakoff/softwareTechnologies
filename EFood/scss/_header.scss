@@ -1,0 +1,134 @@
+.header {
+   height: 870px;
+   .navbar {
+      background: whitesmoke;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 10000;
+   }
+   .collapse {
+      .basket {
+         img {
+            width: 20px;
+            height: 20px;
+            margin-top: 10px;
+         }
+         color: $textColor;
+      }
+      .nav-item {
+         padding-left: 40px;
+         .nav-link {
+            color: $textColor;
+            font-size: 18px;
+            &:hover {
+               color: $mainColor;  
+            }
+         }
+      }
+   }
+   .banner-text {
+      margin-top: 350px;
+      .color-text {
+         color: $mainColor;
+      }
+      h1 {
+         font-size: 55px;
+         font-weight: 500;
+         color: $textColor;
+      }
+      p {
+         font-size: 20px;
+         color: $textColor;
+         padding-top: 30px;
+      }
+   }
+   .banner-img {
+      margin-top: 130px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .header {
+      height: 780px;
+   }
+   .banner {
+      .banner-text {
+         margin-top: 300px;
+      }
+      .banner-text h1 {
+         font-size: 40px;
+      }
+      .banner-img {
+         margin-top: 150px;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   .header {
+      height: 690px;
+   }
+   .category {
+      margin-top: -60px !important;
+   }
+   .banner {
+      .banner-text {
+         margin-top: 250px;
+         h1 {
+            font-size: 30px;
+         }
+         p {
+            font-size: 13px !important;
+         }
+         .banner-img {
+            margin-top: 130px;
+         }
+      } 
+   }
+}
+
+@media (max-width: 768px) {
+   .header {
+      height: 600px;
+      .nav-item {
+         padding-left: 0 !important;
+         text-align: center;
+         .nav-link {
+            color: $textColor;
+            font-size: 14px !important;
+            &:hover {
+               color: $mainColor;  
+            }
+         }
+      }
+   }
+   .banner {
+      .banner-text {
+         margin-top: 200px;
+      }
+      .banner-text h1 {
+         font-size: 25px;
+      }
+      .banner-text p {
+         font-size: 12px !important;
+      }
+   }
+}
+
+@media (max-width: 576px) {
+   .banner {
+      .banner-text {
+         text-align: center;
+      }
+      .banner-text h1 {
+         font-size: 25px;
+      }
+      .banner-text p {
+         font-size: 12px !important;
+      }
+      .banner-img {
+         display: none;
+      }
+   }
+}
