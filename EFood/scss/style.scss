@@ -1,0 +1,16 @@
+@import '_nullstyle';
+@import '_var';
+@import '_header';
+@import '_category';
+@import '_reviews';
+@import '_smartbasket';
+@import '_footer';
+
+// Подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+body {
+   background:  #f6f6f6;
+   font-family: 'Rubik';
+   font-weight: 400;
+}
